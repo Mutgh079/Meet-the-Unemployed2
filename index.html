@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Merhaba — Kendimi Tanıtıyorum</title>
+    <link rel="stylesheet" href="merhaba.css" />
+  </head>
+  <body>
+    <div class="decor" id="decor" aria-hidden="true"></div>
+    <div class="wrap">
+      <div class="card">
+        <div class="left">
+          <div class="avatar" id="avatar">
+            <div class="img" id="avatarPreview">
+              <img
+                src="ben.jpg"
+                alt="Profil"
+                style="
+                  width: 100%;
+                  height: auto;
+                  border-radius: 8px;
+                  object-fit: cover;
+                  display: block;
+                "
+              />
+            </div>
+          </div>
+          <div class="info">
+            <div class="name" id="myName">Adınız Soyadınız</div>
+            <div class="tags" id="tags">
+              <div class="tag">#tasarım</div>
+              <div class="tag">#kodlama</div>
+              <div class="tag">#bomba</div>
+            </div>
+            <div class="controls"></div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="header-row">
+            <div class="meet">Meet the Unemployed — Kendimi Tanıtıyorum</div>
+            <div class="pinned">Kısa not: Kendimi tanıttığım sayfa.</div>
+          </div>
+          <div class="grid">
+            <div class="box">
+              <h3>Hakkımda</h3>
+              <p id="about" style="color: var(--muted); margin: 0">
+                Merhaba ben Mutgh hem üniversite kazanmayı hemde web tasarlamayı
+                öğrenmeye çalışıyorum. Kendimi tanıtmak için bu siteyi yaptım
+                zaten bunu okuyorsan public bir şekilde yayınlanmıştır. Bekleme
+                hadi oku grr >:(
+              </p>
+            </div>
+            <div class="box">
+              <h3>Detaylar</h3>
+              <ul>
+                <li id="detailAge">Yaş: 17-18</li>
+                <li id="detailLocation">Şehir: İstanbul</li>
+                <li id="detailPronouns">Kişi zamiri: He/They</li>
+                <li id="detailType">Kişilik tipi: ISFJ</li>
+                <li id="detailSexuality">Yönelim: Biseksüel</li>
+                <li id="detailHeight">Boyum: 1.77-1.80 (Tam olarak kaç bilmiyorum)</li>
+              </ul>
+            </div>
+            <div class="box">
+              <h3>Sevdiklerim</h3>
+              <ul id="likes">
+                <li>Müzik</li>
+                <li>Oyunlar</li>
+                <li>Creepypasta,Analog Korku</li>
+                <li>Dizi,Film,Anime</li>
+                <li>Kitap Okumak</li>
+                <li>Kış Mevsimi</li>
+              </ul>
+            </div>
+            <div class="box">
+              <h3>Sevmediklerim</h3>
+              <ul id="dislikes">
+                <li>Kalabalık</li>
+                <li>Yaz Mevsimi</li>
+                <li>Zorbalar</li>
+                <li>Empati Duyamayanlar</li>
+                <li>Homofobikler,Transfobikler</li>
+                <li>"İş" Kelimesi</li>
+              </ul>
+            </div>
+          </div>
+          <div class="big-note">
+            <strong>Favori Müzisyenlerim</strong>
+            <div class="bag" id="bag">
+              <div class="item">
+                <div class="emoji">🎵</div>
+                <div style="font-size: 13px; margin-top: 8px">
+                  Michael Jackson
+                </div>
+              </div>
+              <div class="item">
+                <div class="emoji">🎶</div>
+                <div style="font-size: 13px; margin-top: 8px">Mitski</div>
+              </div>
+              <div class="item">
+                <div class="emoji">🎸</div>
+                <div style="font-size: 13px; margin-top: 8px">Mac DeMarco</div>
+              </div>
+              <div class="item">
+                <div class="emoji">🌀</div>
+                <div style="font-size: 13px; margin-top: 8px">Gorillaz</div>
+              </div>
+              <div class="item">
+                <div class="emoji">🌀</div>
+                <div style="font-size: 13px; margin-top: 8px">TV Girl</div>
+              </div>
+              <div class="item">
+                <div class="emoji">🌀</div>
+                <div style="font-size: 13px; margin-top: 8px">Lady Gaga</div>
+              </div>
+            </div>
+          </div>
+          <div
+            style="
+              display: flex;
+              gap: 12px;
+              margin-top: 14px;
+              align-items: center;
+            "
+          >
+            <a class="btn" href="#contact" id="contactBtn">İletişim</a>
+            <button class="btn secondary" id="downloadBtn">
+              Sayfayı Kaydet (PNG)
+            </button>
+          </div>
+          <footer id="contact" style="margin-top: 18px">
+            E-posta: <span id="email">you@example.com</span> · GitHub:
+            <span id="github">github.com/username</span>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <script src="merhaba.js"></script>
+  </body>
+</html>

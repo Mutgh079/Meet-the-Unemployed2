@@ -147,39 +147,33 @@ ul {
 }
 .bag .item {
   background: #fff;
-  padding: 10px;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
-  min-width: 120px;
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.06);
+  min-width: 160px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  gap: 12px;
+  text-align: left;
 }
 .bag .item .emoji {
   font-size: 26px;
 }
+@media (max-width: 720px) {
+  .bag .item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-width: 120px;
+  }
+}
+
 .controls {
   margin-top: 18px;
   display: flex;
   gap: 10px;
   align-items: center;
-}
-.btn {
-  background: var(--accent);
-  color: #fff;
-  padding: 10px 14px;
-  border-radius: 9px;
-  border: none;
-  cursor: pointer;
-}
-.btn.secondary {
-  background: #f3f3f3;
-  color: #222;
-}
-footer {
-  margin-top: 18px;
-  color: var(--muted);
-  font-size: 13px;
 }
 
 @media (max-width: 820px) {
@@ -321,4 +315,20 @@ body::before {
   body::before {
     animation: none;
   }
+}
+
+.artist-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: inline-block;
+  border: 3px solid rgba(255, 255, 255, 0.95);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.14);
+}
+.item .artist-meta {
+  font-size: 14px;
+  margin-top: 0;
+  color: var(--muted);
+  font-weight: 600;
 }

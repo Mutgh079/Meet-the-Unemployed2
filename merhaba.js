@@ -1,8 +1,17 @@
 const avatarPreview = document.getElementById("avatarPreview");
 
-document.getElementById("downloadBtn").addEventListener("click", () => {
-  window.print();
-});
+const downloadMain = document.getElementById("downloadBtn");
+if (downloadMain) {
+  downloadMain.addEventListener("click", () => {
+    window.print();
+  });
+}
+const downloadSmall = document.getElementById("downloadBtnSmall");
+if (downloadSmall) {
+  downloadSmall.addEventListener("click", () => {
+    window.print();
+  });
+}
 
 (function () {
   const decor = document.getElementById("decor");

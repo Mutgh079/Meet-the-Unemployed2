@@ -13,6 +13,40 @@ if (downloadSmall) {
   });
 }
 
+const feedbackResult = document.getElementById("feedbackResult");
+document.querySelectorAll("[data-feedback]").forEach((button) => {
+  button.addEventListener("click", () => {
+    const feedback = button.dataset.feedback;
+    feedbackResult.textContent =
+      feedback === "Bok gibi olmuş"
+        ? "Sensin bok"
+        : `Ay sen birtanesin, çok teşekkürler!`;
+
+    if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      for (let i = 0; i < 36; i++) {
+        const particle = document.createElement("span");
+        particle.className = "feedback-particle";
+        particle.style.setProperty(
+          "--x",
+          `${Math.round(Math.random() * 150 - 75)}px`,
+        );
+        particle.style.setProperty(
+          "--y",
+          `${Math.round(Math.random() * -110 - 20)}px`,
+        );
+        particle.style.setProperty(
+          "--r",
+          `${Math.round(Math.random() * 360)}deg`,
+        );
+        particle.addEventListener("animationend", () => particle.remove(), {
+          once: true,
+        });
+        button.appendChild(particle);
+      }
+    }
+  });
+});
+
 (function () {
   const decor = document.getElementById("decor");
   if (!decor) return;

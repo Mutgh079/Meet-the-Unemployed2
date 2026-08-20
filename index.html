@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Merhaba — Kendimi Tanıtıyorum</title>
+    <link rel="icon" type="image/jpeg" href="icon.png" />
     <link rel="stylesheet" href="merhaba.css" />
   </head>
   <body>
@@ -52,13 +53,44 @@
               </p>
             </div>
             <div class="box">
+              <h3>Sitem nasıl olmuş?</h3>
+              <p class="feedback-question">Sence bu site iyi mi, kötü mü?</p>
+              <div class="feedback-actions">
+                <button
+                  class="feedback-button"
+                  type="button"
+                  data-feedback="İyi"
+                >
+                  İyi olmuş
+                </button>
+                <button
+                  class="feedback-button"
+                  type="button"
+                  data-feedback="Bok gibi olmuş"
+                >
+                  Bok gibi olmuş
+                </button>
+              </div>
+              <p
+                class="feedback-result"
+                id="feedbackResult"
+                aria-live="polite"
+              ></p>
+            </div>
+            <div class="box">
               <h3>Detaylar</h3>
               <ul>
                 <li id="detailAge">Yaş: 17-18</li>
                 <li id="detailLocation">Şehir: İstanbul</li>
                 <li id="detailPronouns">Kişi zamiri: He/They</li>
                 <li id="detailType">Kişilik tipi: ISFJ</li>
-                <li id="detailSexuality">Yönelim: Biseksüel</li>
+                <li id="detailSexuality">
+                  Yönelim: Biseksüel<img
+                    class="orientation-icon"
+                    src="yönelim.png"
+                    alt="Biseksüel bayrağı"
+                  />
+                </li>
                 <li id="detailHeight">
                   Boyum: 1.77-1.80 (Tam olarak kaç bilmiyorum)
                 </li>
@@ -82,7 +114,7 @@
                 <li>Yaz Mevsimi</li>
                 <li>Zorbalar</li>
                 <li>Empati Duyamayanlar</li>
-                <li>Homofobikler,Transfobikler</li>
+                <li>Homofobikler, Transfobikler</li>
                 <li>"İş" Kelimesi</li>
               </ul>
             </div>
@@ -140,15 +172,18 @@
               </div>
             </div>
           </div>
-          <div
-            style="
-              display: flex;
-              gap: 12px;
-              margin-top: 14px;
-              align-items: center;
-            "
-          >
-          
+          <footer class="site-footer">
+            <div>
+              <strong
+                >Buraya kadar okuduğun veya okumadığın için teşekkürler!</strong
+              >
+              <p>
+                Beni sevip sevmesende tanısan tanımasanda siteye gelmen çok
+                güzel!
+              </p>
+            </div>
+            <span>Mutgh · 2026</span>
+          </footer>
         </div>
       </div>
     </div>
